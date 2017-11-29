@@ -1,0 +1,14 @@
+{
+  "title": "Inference Overview",
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Request Throughput",
+      "targets": [
+        {
+          "expr": "sum(rate(http_requests_total[1m]))"
+        }
+      ]
+    }
+  ]
+}
